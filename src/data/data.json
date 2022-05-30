@@ -1,36 +1,36 @@
 {
   "Header": {
-    "title": "Welcome",
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sed commodo nibh ante facilisis bibendum."
+    "title": "Swiss-German Institute",
+    "paragraph": "Excellence Award for Your Online Business Reputation"
   },
   
   "Mission": [
     {
       "icon": "fa fa-bullseye",
       "title": "Our Mission",
-      "text": "Promoting standards and achieving excellence in the online reputation management practice whilst promoting community engagement, corporate social responsibility and health and wellness."
+      "text": "Our mission is to drive the global online business excellence and helping organizations achieve happy and healthy client employee connectedness."
     },
     
     {
       "icon": "fa fa-eye",
       "title": "Our Vision",
-      "text": "SGI as the leading global award body for exquisite online business reputation and brand management."
+      "text": "Becoming the leading global awarding institute by promoting highest standards and raising capabilities in the customer excellence, reputation management, and employee happiness. "
     }
   ],
   
   "About": {
-    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "paragraph": "Swiss-German Institute was founded on the grounds of promoting and protecting company’s brand so it can be discovered, followed, recommended and even defended in a predominantly digital marketplace. SGI helps organizations globally ensure they manage their online reputation management right. Initially founded in Switzerland, with headquarters moved to Germany, SGI’s cause spans internationally; helping organizations improve their online reputation, brand management, customer service excellence, corporate social responsibility and happiness at work. SGI’s awarding criteria guides organizations on the right path to global reputation and customer service excellence.",
     "Why": [
-      "Lorem ipsum dolor",
-      "Tempor incididunt",
-      "Lorem ipsum dolor",
-      "Incididunt ut labore"
+      "Increase your global competitiveness",
+      "Establish customer excellence",
+      "Widen community engagement ",
+      "Analyse and learn competition"
     ],
     "Why2": [
-      "Aliquip ex ea commodo",
-      "Lorem ipsum dolor",
-      "Exercitation ullamco",
-      "Lorem ipsum dolor"
+      "Manage crisis",
+      "Cement brand reputation",
+      "Improve corporate social responsibility",
+      "Make employees happy and safe"
     ]
   },
  
@@ -84,6 +84,4 @@
     "linkedin": "https://www.linkedin.com/",
     "mail": "youtube.com"
   }
- 
-
 }

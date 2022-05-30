@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
 import JsonData from './data/data.json'
 import './App.css'
-import { Header } from "./components/Header";
 import { Navigation } from "./components/Navigation";
-import { Mission } from "./components/Mission";
-import { About } from "./components/About";
-import { Services } from "./components/Services";
 import { Footer } from "./components/Footer";
+import { Awards } from "./components/Awards";
+import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./components/HomePage";
 
-
+// export const scroll = new SmoothScroll('a[href*="#"]', {
+//   speed: 1000,
+//   speedAsDuration: true,
+// });
 
 export function App() {
   const [landingPageData, setLandingPageData] = useState({});
@@ -19,12 +21,14 @@ export function App() {
   return (
     <div>
       <Navigation />
-      <Header data={landingPageData.Header} />
-     
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Mission data={landingPageData.Mission} />
-      <Footer data={landingPageData.Footer}/>
+
+      <Routes >
+        <Route path="/" element={<HomePage />} />
+        <Route path="/awards" element={<Awards />} />
+
+      </Routes>
+      
+      <Footer data={landingPageData.Footer} />
 
     </div>
   )
