@@ -29,11 +29,11 @@ export const Awards = (props) => {
       <div id="about">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-md-6">
+            <div className="col-xs-12 col-md-4">
               {" "}
               <div className="card">
                 <div className="image">
-                  <img src={card1} className="img-award" alt="" />{" "}
+                  <img src={card2} className="img-award" alt="" />{" "}
                 </div>
                 <div className="card-details">
                   <div class="card-text">
@@ -55,7 +55,33 @@ export const Awards = (props) => {
               </div>
 
             </div>
-            <div className="col-xs-12 col-md-6">
+            <div className="col-xs-12 col-md-4">
+              {" "}
+              <div className="card">
+                <div className="image">
+                  <img src={card1} className="img-award" alt="" />{" "}
+                </div>
+                <div className="card-details">
+                  <div class="card-text">
+                    <h3 className="card-topic">
+                      SGI Reputation and Brand Management Award
+                    </h3>
+                    <div className="card-opis">
+                      <ul >
+                        {props.data
+                          ? props.data.Card2.map((d, i) => (
+                            <li key={`${d}-${i}`}>{d}</li>
+                          ))
+                          : "loading"}
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div className="col-xs-12 col-md-4">
               {" "}
               <div className="card">
                 <div className="image">
@@ -82,49 +108,13 @@ export const Awards = (props) => {
 
             </div>
 
-
           </div>
 
         </div>
       </div>
 
 
-      <div id="about">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 col-md-6">
-              {" "}
-              <div className="card">
-                <div className="image">
-                  <img src={card1} className="img-award" alt="" />{" "}
-                </div>
-                <div className="card-details">
-                  <div class="card-text">
-                    <h3 className="card-topic">
-                      SGI Grand Prix Award
-                    </h3>
-                    <div className="card-opis">
-                      <ul >
-                        {props.data
-                          ? props.data.Card3.map((d, i) => (
-                            <li key={`${d}-${i}`}>{d}</li>
-                          ))
-                          : "loading"}
-                      </ul>
-                    </div>
 
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-
-
-          </div>
-
-        </div>
-      </div>
     </div>
   )
 }
