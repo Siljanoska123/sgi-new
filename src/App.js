@@ -24,7 +24,7 @@ export function App() {
 
       <Routes >
         <Route path="/" element={<HomePage />} />
-        <Route path="/awards" element={<Awards />} />
+        <Route path="/awards" element={<Awards data={landingPageData.Awards} />} />
 
       </Routes>
       

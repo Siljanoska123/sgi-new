@@ -3,21 +3,40 @@
     "title": "Swiss-German Institute",
     "paragraph": "Excellence Award for Your Online Business Reputation"
   },
-  
+  "Awards": {
+    "title": "Awards",
+    "Card": [
+      "- online reputation review",
+      "- customer excellence"
+    ],
+    "Card2": [
+      "- online reputation review",
+      "- customer excellence",
+      "- marketing management",
+      "- community engagement"
+    ],
+
+    "Card3": [
+      "- online reputation review",
+      "- customer excellence",
+      "- marketing management",
+      "- community engagement",
+      "- corporate social responsibility",
+      "- media relations"
+    ]
+  },
   "Mission": [
     {
       "icon": "fa fa-bullseye",
       "title": "Our Mission",
-      "text": "Our mission is to drive the global online business excellence and helping organizations achieve happy and healthy client employee connectedness."
+      "text": "Our mission is to drive the global online business excellence and help organizations achieve happy and healthy client employee connectedness."
     },
-    
     {
       "icon": "fa fa-eye",
       "title": "Our Vision",
       "text": "Becoming the leading global awarding institute by promoting highest standards and raising capabilities in the customer excellence, reputation management, and employee happiness. "
     }
   ],
-  
   "About": {
     "paragraph": "Swiss-German Institute was founded on the grounds of promoting and protecting company’s brand so it can be discovered, followed, recommended and even defended in a predominantly digital marketplace. SGI helps organizations globally ensure they manage their online reputation management right. Initially founded in Switzerland, with headquarters moved to Germany, SGI’s cause spans internationally; helping organizations improve their online reputation, brand management, customer service excellence, corporate social responsibility and happiness at work. SGI’s awarding criteria guides organizations on the right path to global reputation and customer service excellence.",
     "Why": [
@@ -33,7 +52,6 @@
       "Make employees happy and safe"
     ]
   },
- 
   "Services": [
     {
       "icon": "fa fa-star-half-o",
