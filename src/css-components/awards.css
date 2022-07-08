@@ -1,133 +1,197 @@
-
-.awardCover{
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    background: #111;
-  }
-  
-  .awardImage {
-    z-index: 000;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100% ;
-    object-fit: cover;
-    opacity: 0.8;
-  }
-
-  .awardCover h1 {
-    font-family: "Raleway", sans-serif;
-    color: #fff;
-    font-size: 82px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 10px;
-  }
-
-  header .awardCover-text {
-    padding-top: 350px;
-    padding-bottom: 200px;
-    text-align: center;
-  }
-
-
-  .card {
-    position: relative;
-    overflow: hidden;
+/**
+* VARIABLES
+**/
+/* 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+* {
     box-sizing: border-box;
-    text-align: left;
-    hyphens: manual;
-    align-content: flex-start;
-    display: flex;
-    width: 100%;
- 
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  .card-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    max-width: 100%;
-    transition: .5s;
-  }
-  
-  .card:hover .card-image {
-    opacity: .5;
-    transform: translateX(30%);/*100%*/
-  }
-
-/* !!!!!!da se dogovorime pozadina na hover */
-.card-details {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 70%;/*100%*/
-    height: 100%;
-    /* background: #6372ff; */
-    background: linear-gradient(to right, #6372ff 0%, white 100%);
-  
-    transition: .5s;
-    transform-origin: left;
-    transform: perspective(2000px) rotateY(-90deg);
-  }
-  
-  .card:hover .card-details {
-    transform: perspective(2000px) rotateY(0deg);
-  }
-  .card-text {
-    padding: 20px;
-    text-align: center;
-    background: #fff;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .card-topic{
     margin: 0;
     padding: 0;
-    color:linear-gradient(to right, #6372ff 0%, black 100%);
-    line-height: 20px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-bottom: 50px;
-    text-shadow: 1px 1px #03a9f4;
-  }
-  
+}
 
-  .card-opis {
-    margin: 5px 0;
-    padding: 0;
+body {
+    font-family: "Open Sans";
+    font-size: 16px;
+    background-color: #eee;
+} */
 
-  }
-  
-  .card-opis ul {
 
-    margin-left: -15px;
+/**
+* CARD
+**/
+
+#awards{
+
+    padding: 100px 0;
+
+
+
+}
+.card {
+    text-align: left;
+    position: relative;
+    top: 20%;
  
+    display: inline-block;
+    overflow: hidden;
+    height: 65%;
+    margin: 20px;
+    
+    min-width: 230px;
+    max-width: 370px;
+    width: 100%;
+    /* width: 370px; */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    -webkit-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+
+    
+}
+
+.card a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+}
+
+
+/**
+* DATE
+**/
+
+
+/**
+* THUMB
+**/
+
+.card__thumb {
+    height: 245px;
+    overflow: hidden;
+    background-color: #000;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card__thumb img {
+    width: 100%;
+    display: block;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s;
+    transition: opacity 0.5s, transform 0.5s, -webkit-transform 0.5s;
+}
+
+.card:hover .card__thumb {
+    height: 130px;
+}
+
+.card:hover .card__thumb img {
+    opacity: 0.6;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/**
+* card_BODY
+**/
+
+.card__body {
+    position: relative;
+    height: 185px;
+    padding: 20px;
+    -webkit-transition: height 0.5s;
+    transition: height 0.5s;
+}
+
+.card:hover .card__body {
+    height: 300px;
+}
+
+.card__category {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    height: 25px;
+    padding: 0 15px;
+    background-color: #6372ff;
+ 
+    /* 5ca9fb */
+
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    line-height: 25px;
+}
+
+.card__title {
+    margin: 0;
+    padding: 0 0 10px 0;
+    color: #000;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.card__subtitle {
+    margin: 0;
+    padding: 0 0 10px 0;
+    font-size: 19px;
+    color: #5ca9fb;
+}
+
+.card__description {
+    position: absolute;
    
-  }
-  
-  .card-opis ul li {
-    float: left;
-    hyphens: manual;
-    padding-left: 50px;
-    clear: both;  
-    padding-bottom: 10px;
-    }
-  
-  
-  
-  
+    left: 20px;
+    right: 20px;
+    bottom: 30px;
+    margin: 0;
+    padding: 0;
+    color: #666C74;
+    line-height: 27px;
+    opacity: 0;
+    -webkit-transform: translateY(45px);
+    transform: translateY(45px);
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, -webkit-transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s;
+    transition: opacity 0.3s, transform 0.3s, -webkit-transform 0.3s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.card:hover .card__description {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.card__footer {
+    position: absolute;
+    bottom: 12px;
+    left: 20px;
+    right: 20px;
+    font-size: 11px;
+    color: #A3A9A2;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin: -2px 0 0 2px;
+    font-size: 18px;
+}
+
+.icon+.icon {
+    padding-left: 10px;
+}

@@ -4,25 +4,28 @@
     "paragraph": "Excellence Award for Your Online Business Reputation"
   },
   "Awards": {
-    "title": "Awards",
+    "title_card1": "SGI Customer Excellence Award",
+    "title_card2": "SGI Reputation and Brand Management Award",
+    "title_card3": " SGI Reputation and Brand Management Award",
+    
     "Card": [
-      "- online reputation review",
-      "- customer excellence"
+      "online reputation review",
+      "customer excellence"
     ],
     "Card2": [
-      "- online reputation review",
-      "- customer excellence",
-      "- marketing management",
-      "- community engagement"
+      "online reputation review",
+      "customer excellence",
+      "marketing management",
+      "community engagement"
     ],
 
     "Card3": [
-      "- online reputation review",
-      "- customer excellence",
-      "- marketing management",
-      "- community engagement",
-      "- corporate social responsibility",
-      "- media relations"
+      "online reputation review",
+      "customer excellence",
+      "marketing management",
+      "community engagement",
+      "corporate social responsibility",
+      "media relations"
     ]
   },
   "Mission": [

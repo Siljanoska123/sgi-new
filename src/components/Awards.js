@@ -1,120 +1,89 @@
 import React from "react";
-import image from '../images/awcover.jpg'
+
 import '../css-components/awards.css'
-import card1 from '../images/aaaa.jpg'
+import card1 from '../images/award1.jpg'
 import card2 from '../images/award2.jpg'
 import card3 from '../images/award3.jpg'
 
+
 export const Awards = (props) => {
+
+
   return (
-    <div>
-      <header id="header">
-        <div className='awardCover'>
-          <img src={image} className="awardImage" />
 
-
-          <div className='container'>
-            <div className='row'>
-              <div className='col-md-8 col-md-offset-2 awardCover-text'>
-                <h1>
-
-                  {props.data ? props.data.title : 'Loading'}
-                </h1>
-              </div>
-            </div>
-          </div>
+    <div id="awards" className='text-center'>
+      <article class="card">
+        <header class="card__thumb">
+          <a href="#"><img src={card1} /></a>
+        </header>
+        <div class="card__body">
+          <div class="card__category"><a href="#">card__category</a></div>
+          <h2 class="card__title"><a href="#">{props.data ? props.data.title_card1 : 'Loading'}</a></h2>
+          <div class="card__subtitle">more </div>
+          <p class="card__description">
+            {props.data
+              ? props.data.Card.map((d, i) => (
+                <li key={`${d}-${i}`}>{d}</li>
+              ))
+              : "loading"}</p>
         </div>
-      </header>
+        <footer class="card__footer">
+          <span class="icon ion-clock"></span> 10 mins ago
+          <span class="icon ion-chatbox"></span><a href="#"> 145 comments</a>
+        </footer>
+      </article>
 
-      <div id="about">
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12 col-md-4">
-              {" "}
-              <div className="card">
-                <div className="image">
-                  <img src={card2} className="img-award" alt="" />{" "}
-                </div>
-                <div className="card-details">
-                  <div class="card-text">
-                    <h3 className="card-topic">
-                      SGI Customer Excellence Award
-                    </h3>
-                    <div className="card-opis">
-                      <ul >
-                        {props.data
-                          ? props.data.Card.map((d, i) => (
-                            <li key={`${d}-${i}`}>{d}</li>
-                          ))
-                          : "loading"}
-                      </ul>
-                    </div>
 
-                  </div>
-                </div>
-              </div>
 
-            </div>
-            <div className="col-xs-12 col-md-4">
-              {" "}
-              <div className="card">
-                <div className="image">
-                  <img src={card1} className="img-award" alt="" />{" "}
-                </div>
-                <div className="card-details">
-                  <div class="card-text">
-                    <h3 className="card-topic">
-                      SGI Reputation and Brand Management Award
-                    </h3>
-                    <div className="card-opis">
-                      <ul >
-                        {props.data
-                          ? props.data.Card2.map((d, i) => (
-                            <li key={`${d}-${i}`}>{d}</li>
-                          ))
-                          : "loading"}
-                      </ul>
-                    </div>
 
-                  </div>
-                </div>
-              </div>
+      <article class="card">
+        <header class="card__thumb">
+          <a href="#"><img src={card2} /></a>
+        </header>
 
-            </div>
-            <div className="col-xs-12 col-md-4">
-              {" "}
-              <div className="card">
-                <div className="image">
-                  <img src={card1} className="img-award" alt="" />{" "}
-                </div>
-                <div className="card-details">
-                  <div class="card-text">
-                    <h3 className="card-topic">
-                      SGI Reputation and Brand Management Award
-                    </h3>
-                    <div className="card-opis">
-                      <ul >
-                        {props.data
-                          ? props.data.Card2.map((d, i) => (
-                            <li key={`${d}-${i}`}>{d}</li>
-                          ))
-                          : "loading"}
-                      </ul>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-
+        <div class="card__body">
+          <div class="card__category"><a href="#">card__category</a></div>
+          <h2 class="card__title"><a href="#">{props.data ? props.data.title_card2 : 'Loading'}</a></h2>
+          <div class="card__subtitle">more</div>
+          <p class="card__description">
+            {props.data
+              ? props.data.Card2.map((d, i) => (
+                <li key={`${d}-${i}`}>{d}</li>
+              ))
+              : "loading"}
+          </p>
         </div>
-      </div>
+        {/* <footer class="card__footer">
+    <span class="icon ion-clock"></span> 10 mins ago
+    <span class="icon ion-chatbox"></span><a href="#"> 145 comments</a>
+  </footer> */}
+      </article>
+
+      <article class="card">
+        <header class="card__thumb">
+          <a href="#"><img src={card3} /></a>
+        </header>
+
+        <div class="card__body">
+          <div class="card__category"><a href="#">card__category</a></div>
+          <h2 class="card__title"><a href="#">{props.data ? props.data.title_card3 : 'Loading'}</a></h2>
+          <div class="card__subtitle">more</div>
+          <p class="card__description">
+            {props.data
+              ? props.data.Card3.map((d, i) => (
+                <li key={`${d}-${i}`}>{d}</li>
+              ))
+              : "loading"}
+          </p>
+        </div>
+
+      </article>
+
+
 
 
 
     </div>
+
   )
 }
